@@ -22,6 +22,11 @@ const routes = [
         component:() => import("../views/reset/index.vue")
     },
     {
+        path: "/reseted",
+        name: "resetComplete",
+        component:() => import("../views/reset/resetComplete.vue")
+    },
+    {
         path: "/",
         name: "home",
         component:() => import("../layout/index.vue"),

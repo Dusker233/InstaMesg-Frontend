@@ -88,7 +88,7 @@ const onSubmit = () => {
         type: 'success',
       })
       sessionStorage.setItem("2FA", res.data.message)
-      router.replace('/')
+      router.replace('/resetComplete')
     } else {
       ElMessage.error(res.data.message)
     }
