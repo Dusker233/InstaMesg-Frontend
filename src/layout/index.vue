@@ -71,6 +71,10 @@
     })
   })
 
+  // onbeforeunload = function() {
+  //   request.get("/user/logout")
+  //   sessionStorage.removeItem("user")
+  // }
 </script>
 
 <style scoped>
