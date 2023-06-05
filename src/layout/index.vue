@@ -3,6 +3,7 @@
     <div class="home-cont">
       <div class="home-cont-left">
         <div class="home-cont-left-top">
+<!--          <el-avatar :src="url" />-->
           <img :src="url" class="home-cont-left-img" />
           <router-link tag="div" to="/listFriend" class="home-icon">
             <el-icon size="25" color="#9F9D99"><ChatDotSquare /></el-icon>
@@ -70,6 +71,11 @@
       }
     })
   })
+
+  onclose = function() {
+    sessionStorage.removeItem("user")
+    request.get("/user/logout")
+  }
 
   // onbeforeunload = function() {
   //   request.get("/user/logout")
